@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Verification Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #08090e;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+    }
+
+    .header {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #252632;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+      color: #ac9ef3;
+    }
+
+    .back {
+      position: absolute;
+      left: 20px;
+      font-size: 30px;
+      color: white;
+    }
+
+    .shield {
+      text-align: center;
+      padding: 55px 20px 25px;
+    }
+
+    .shield-icon {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(172, 158, 243, 0.12);
+      border: 1px solid rgba(172, 158, 243, 0.45);
+      box-shadow: 0 0 45px rgba(172, 158, 243, 0.25);
+      font-size: 55px;
+      color: #ac9ef3;
+    }
+
+    .shield h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .purple {
+      color: #ac9ef3;
+    }
+
+    .subtitle {
+      color: #b5b5bf;
+      font-size: 17px;
+    }
+
+    .container {
+      width: min(92%, 650px);
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .card {
+      background: #101117;
+      border: 1px solid #292b37;
+      border-radius: 22px;
+      padding: 25px;
+      margin-top: 18px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .code-box {
+      border: 1px dashed #ac9ef3;
+      border-radius: 14px;
+      padding: 20px 10px;
+      text-align: center;
+      color: #ac9ef3;
+      font-size: 27px;
+      font-weight: 700;
+      letter-spacing: 7px;
+      overflow-x: auto;
+    }
+
+    .copy-button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      background: #ac9ef3;
+      color: #090a0f;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .copy-button:active {
+      transform: scale(0.98);
+    }
+
+    .notice {
+      color: #b8b8c2;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .notice strong {
+      color: white;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+
+    .demo-label {
+      margin-top: 20px;
+      text-align: center;
+      color: #777985;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="back">‹</div>
+    <h1>VERIFICATION PAGE</h1>
+  </header>
+
+  <section class="shield">
+    <div class="shield-icon">✓</div>
+
+    <h2>
+      Verify <span class="purple">Account</span>
+    </h2>
+
+    <p class="subtitle">
+      Enter or copy your approval code below
+    </p>
+  </section>
+
+  <main class="container">
+
+    <div class="card">
+      <div class="card-title">
+        Approval Code
+      </div>
+
+      <div
+        id="approvalCode"
+        class="code-box"
+      >
+        AC9EF38726
+      </div>
+
+      <button
+        id="copyCode"
+        class="copy-button"
+      >
+        Copy Code
+      </button>
+    </div>
+
+    <div class="card notice">
+      <strong>Verification Status</strong>
+
+      This is a demonstration verification interface.
+      Use the approval code supplied by your application
+      or administrator.
+    </div>
+
+    <div class="demo-label">
+      SECURE VERIFICATION DEMO
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
